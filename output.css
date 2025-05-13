@@ -11,6 +11,7 @@
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-xs: 20rem;
+    --container-sm: 24rem;
     --container-md: 28rem;
     --container-xl: 36rem;
     --container-2xl: 42rem;
@@ -194,14 +195,17 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
-  .-right-0 {
-    right: calc(var(--spacing) * -0);
+  .-right-52 {
+    right: calc(var(--spacing) * -52);
   }
-  .-right-10 {
-    right: calc(var(--spacing) * -10);
+  .-right-60 {
+    right: calc(var(--spacing) * -60);
   }
-  .right-0 {
-    right: calc(var(--spacing) * 0);
+  .-bottom-20 {
+    bottom: calc(var(--spacing) * -20);
+  }
+  .-bottom-32 {
+    bottom: calc(var(--spacing) * -32);
   }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
@@ -215,11 +219,38 @@
   .-mt-6 {
     margin-top: calc(var(--spacing) * -6);
   }
-  .mt-10 {
-    margin-top: calc(var(--spacing) * 10);
+  .-mt-20 {
+    margin-top: calc(var(--spacing) * -20);
+  }
+  .-mt-40 {
+    margin-top: calc(var(--spacing) * -40);
+  }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
   }
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
+  }
+  .mt-32 {
+    margin-top: calc(var(--spacing) * 32);
+  }
+  .mt-40 {
+    margin-top: calc(var(--spacing) * 40);
+  }
+  .mt-60 {
+    margin-top: calc(var(--spacing) * 60);
+  }
+  .-mb-10 {
+    margin-bottom: calc(var(--spacing) * -10);
+  }
+  .-ml-14 {
+    margin-left: calc(var(--spacing) * -14);
+  }
+  .-ml-24 {
+    margin-left: calc(var(--spacing) * -24);
+  }
+  .-ml-32 {
+    margin-left: calc(var(--spacing) * -32);
   }
   .ml-auto {
     margin-left: auto;
@@ -236,14 +267,8 @@
   .w-24 {
     width: calc(var(--spacing) * 24);
   }
-  .w-\[600px\] {
-    width: 600px;
-  }
   .w-full {
     width: 100%;
-  }
-  .max-w-2 {
-    max-width: calc(var(--spacing) * 2);
   }
   .max-w-2xl {
     max-width: var(--container-2xl);
@@ -257,6 +282,9 @@
   .max-w-md {
     max-width: var(--container-md);
   }
+  .max-w-sm {
+    max-width: var(--container-sm);
+  }
   .max-w-xl {
     max-width: var(--container-xl);
   }
@@ -265,11 +293,6 @@
   }
   .border-collapse {
     border-collapse: collapse;
-  }
-  .-translate-0 {
-    --tw-translate-x: calc(var(--spacing) * -0);
-    --tw-translate-y: calc(var(--spacing) * -0);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-x-\[50\%\] {
     --tw-translate-x: calc(50% * -1);
@@ -298,6 +321,9 @@
       margin-inline-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-x-reverse)));
     }
   }
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -307,9 +333,6 @@
   }
   .bg-\[url\(\'\.\/images\/background\.png\'\)\] {
     background-image: url('./images/background.png');
-  }
-  .to-0\% {
-    --tw-gradient-to-position: 0%;
   }
   .bg-cover {
     background-size: cover;
@@ -325,6 +348,15 @@
   }
   .pt-12 {
     padding-top: calc(var(--spacing) * 12);
+  }
+  .pt-20 {
+    padding-top: calc(var(--spacing) * 20);
+  }
+  .pt-25 {
+    padding-top: calc(var(--spacing) * 25);
+  }
+  .pt-32 {
+    padding-top: calc(var(--spacing) * 32);
   }
   .pt-36 {
     padding-top: calc(var(--spacing) * 36);
@@ -447,6 +479,11 @@
       line-height: var(--tw-leading, var(--text-2xl--line-height));
     }
   }
+  .xl\:mt-12 {
+    @media (width >= 80rem) {
+      margin-top: calc(var(--spacing) * 12);
+    }
+  }
 }
 @property --tw-translate-x {
   syntax: "*";
@@ -473,48 +510,6 @@
   inherits: false;
   initial-value: solid;
 }
-@property --tw-gradient-position {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-gradient-from {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #0000;
-}
-@property --tw-gradient-via {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #0000;
-}
-@property --tw-gradient-to {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #0000;
-}
-@property --tw-gradient-stops {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-gradient-via-stops {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-gradient-from-position {
-  syntax: "<length-percentage>";
-  inherits: false;
-  initial-value: 0%;
-}
-@property --tw-gradient-via-position {
-  syntax: "<length-percentage>";
-  inherits: false;
-  initial-value: 50%;
-}
-@property --tw-gradient-to-position {
-  syntax: "<length-percentage>";
-  inherits: false;
-  initial-value: 100%;
-}
 @property --tw-leading {
   syntax: "*";
   inherits: false;
@@ -536,15 +531,6 @@
       --tw-translate-z: 0;
       --tw-space-x-reverse: 0;
       --tw-border-style: solid;
-      --tw-gradient-position: initial;
-      --tw-gradient-from: #0000;
-      --tw-gradient-via: #0000;
-      --tw-gradient-to: #0000;
-      --tw-gradient-stops: initial;
-      --tw-gradient-via-stops: initial;
-      --tw-gradient-from-position: 0%;
-      --tw-gradient-via-position: 50%;
-      --tw-gradient-to-position: 100%;
       --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-outline-style: solid;
