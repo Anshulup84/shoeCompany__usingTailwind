@@ -318,6 +318,9 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .bg-\[url\] {
+    background-color: url;
+  }
   .bg-black {
     background-color: var(--color-black);
   }
@@ -327,8 +330,47 @@
       background-color: color-mix(in oklab, var(--color-black) 70%, transparent);
     }
   }
+  .bg-\[url\(\'\.\/images\/about-us-background\'\)\] {
+    background-image: url('./images/about-us-background');
+  }
+  .bg-\[url\(\'\.\/images\/about-us-background\.png\'\)\] {
+    background-image: url('./images/about-us-background.png');
+  }
+  .bg-\[url\(\'\.\/images\/about-us-background1\.png\'\)\] {
+    background-image: url('./images/about-us-background1.png');
+  }
+  .bg-\[url\(\'\.\/images\/about-usbackground\'\)\] {
+    background-image: url('./images/about-usbackground');
+  }
   .bg-\[url\(\'\.\/images\/background\.png\'\)\] {
     background-image: url('./images/background.png');
+  }
+  .bg-\[url\(\'\.\/images\/usbackground\'\)\] {
+    background-image: url('./images/usbackground');
+  }
+  .bg-\[url\(\'\.\/images\/usbackground\.\'\)\] {
+    background-image: url('./images/usbackground.');
+  }
+  .bg-\[url\(\'\.\/images\/usbackground\.png\'\)\] {
+    background-image: url('./images/usbackground.png');
+  }
+  .bg-\[url\(\)\] {
+    background-image: url();
+  }
+  .bg-\[url\(\.\)\] {
+    background-image: url(.);
+  }
+  .bg-\[url\(\.\.\/\)\] {
+    background-image: url(../);
+  }
+  .bg-\[url\(\.\/\)\] {
+    background-image: url(./);
+  }
+  .bg-\[url\(\.\/images\)\] {
+    background-image: url(./images);
+  }
+  .bg-\[url\(\.\/images\/\)\] {
+    background-image: url(./images/);
   }
   .bg-cover {
     background-size: cover;
