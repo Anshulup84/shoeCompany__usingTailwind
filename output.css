@@ -214,17 +214,20 @@
   .mx-auto {
     margin-inline: auto;
   }
-  .my-4 {
-    margin-block: calc(var(--spacing) * 4);
-  }
   .my-6 {
     margin-block: calc(var(--spacing) * 6);
   }
   .my-8 {
     margin-block: calc(var(--spacing) * 8);
   }
+  .-mt-3 {
+    margin-top: calc(var(--spacing) * -3);
+  }
   .-mt-6 {
     margin-top: calc(var(--spacing) * -6);
+  }
+  .-mt-8 {
+    margin-top: calc(var(--spacing) * -8);
   }
   .-mt-20 {
     margin-top: calc(var(--spacing) * -20);
@@ -237,6 +240,9 @@
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
+  }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
   }
   .mb-12 {
     margin-bottom: calc(var(--spacing) * 12);
@@ -253,8 +259,14 @@
   .table {
     display: table;
   }
+  .w-14 {
+    width: calc(var(--spacing) * 14);
+  }
   .w-24 {
     width: calc(var(--spacing) * 24);
+  }
+  .w-28 {
+    width: calc(var(--spacing) * 28);
   }
   .w-32 {
     width: calc(var(--spacing) * 32);
@@ -274,12 +286,6 @@
   .max-w-6xl {
     max-width: var(--container-6xl);
   }
-  .max-w-\[1\] {
-    max-width: 1;
-  }
-  .max-w-\[10\] {
-    max-width: 10;
-  }
   .max-w-\[180px\] {
     max-width: 180px;
   }
@@ -294,6 +300,12 @@
   }
   .max-w-xl {
     max-width: var(--container-xl);
+  }
+  .flex-shrink {
+    flex-shrink: 1;
+  }
+  .shrink-0 {
+    flex-shrink: 0;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -334,6 +346,9 @@
   .justify-between {
     justify-content: space-between;
   }
+  .justify-center {
+    justify-content: center;
+  }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
@@ -361,6 +376,9 @@
   .self-center {
     align-self: center;
   }
+  .self-start {
+    align-self: flex-start;
+  }
   .scroll-smooth {
     scroll-behavior: smooth;
   }
@@ -377,17 +395,8 @@
       background-color: color-mix(in oklab, var(--color-black) 70%, transparent);
     }
   }
-  .bg-\[url\(\'\.\/images\/\.png\'\)\] {
-    background-image: url('./images/.png');
-  }
   .bg-\[url\(\'\.\/images\/background\.png\'\)\] {
     background-image: url('./images/background.png');
-  }
-  .bg-\[url\(\'\.\/images\/te\.png\'\)\] {
-    background-image: url('./images/te.png');
-  }
-  .bg-\[url\(\'\.\/images\/testimonial\.png\'\)\] {
-    background-image: url('./images/testimonial.png');
   }
   .bg-\[url\(\'\.\/images\/testimonialBG\.png\'\)\] {
     background-image: url('./images/testimonialBG.png');
@@ -442,6 +451,9 @@
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
+  .text-\[8px\] {
+    font-size: 8px;
+  }
   .leading-\[64px\] {
     --tw-leading: 64px;
     line-height: 64px;
@@ -494,6 +506,11 @@
       display: none;
     }
   }
+  .md\:w-24 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 24);
+    }
+  }
   .md\:w-32 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 32);
@@ -537,6 +554,11 @@
         margin-inline-start: calc(calc(var(--spacing) * 12) * var(--tw-space-x-reverse));
         margin-inline-end: calc(calc(var(--spacing) * 12) * calc(1 - var(--tw-space-x-reverse)));
       }
+    }
+  }
+  .md\:self-center {
+    @media (width >= 48rem) {
+      align-self: center;
     }
   }
   .md\:bg-contain {
@@ -583,6 +605,31 @@
     @media (width >= 48rem) {
       --tw-leading: 92px;
       line-height: 92px;
+    }
+  }
+  .lg\:mx-0 {
+    @media (width >= 64rem) {
+      margin-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:mb-0 {
+    @media (width >= 64rem) {
+      margin-bottom: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:ml-auto {
+    @media (width >= 64rem) {
+      margin-left: auto;
+    }
+  }
+  .lg\:flex {
+    @media (width >= 64rem) {
+      display: flex;
+    }
+  }
+  .lg\:flex-row {
+    @media (width >= 64rem) {
+      flex-direction: row;
     }
   }
   .lg\:space-x-8 {
